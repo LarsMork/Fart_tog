@@ -116,6 +116,8 @@ def _(R, mo):
         warning = f"OBS: Radiusen til kurven ({R} m) er mindre enn minste krav ({R_min} m)."
     elif R < R_min_norm:
         warning = f"OBS: Radiusen til kurven ({R} m) er mindre enn normale krav ({R_min_norm} m)"
+    else:
+        warning = ""
 
     mo.md(warning)
     return
